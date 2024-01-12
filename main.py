@@ -38,6 +38,7 @@ def search_patient():
     Cursor = mydb.cursor()
     query = "SELECT * FROM Patient WHERE room_id = %s"
     data = (room_id,)
+    print("Searching for patient...")
     Cursor.execute(query, data)
     result = Cursor.fetchone()
 
