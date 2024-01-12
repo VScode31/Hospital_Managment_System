@@ -24,7 +24,6 @@ def add_patient():
     data = (room_id, patient_name, patient_address, patient_phone, patient_disease)
     Cursor.execute(query, data)
     mydb.commit()
-    print("Patient added successfully!")
     Cursor.close()
     mydb.close()
 
